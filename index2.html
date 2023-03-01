@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>お問い合わせフォーム</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input, textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+      textarea {
+        height: 150px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>お問い合わせフォーム</h1>
+    <form action="mailto:manato.conan@gmail.com" method="post" enctype="text/plain">
+      <label for="name">お名前</label>
+      <input type="text" name="name" id="name" required>
+      <label for="email">メールアドレス</label>
+      <input type="email" name="email" id="email" required>
+      <label for="subject">件名</label>
+      <input type="text" name="subject" id="subject" required>
+      <label for="message">お問い合わせ内容</label>
+      <textarea name="message" id="message" required></textarea>
+      <input type="submit" value="送信">
+    </form>
+  </body>
+</html>
